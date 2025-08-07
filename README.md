@@ -26,6 +26,20 @@ We present a real-time multiplane image (MPI) network. Unlike existing MPI based
    ```bash
    pip install "pytorch3d @ git+https://github.com/facebookresearch/pytorch3d.git@89653419d0973396f3eff1a381ba09a07fffc2ed"
    ```
+
+
+## Checkpoints (Best Checkpoints Will Be Updated Soon)
+Pretrained model checkpoints should be placed in the `checkpoint/` directory. Example filenames:
+- `checkpoint_RT_MPI_Small.pth`
+- `checkpoint_RT_MPI_Medium.pth`
+- `checkpoint_RT_MPI_Large.pth`
+
+| Model           | Size   | Parameters | Checkpoint |
+|-----------------|--------|------------|----------------|
+| Small           | 26 MB  | 6.6 Million| [Download](https://huggingface.co/3ZadeSSG/RT-MPINet/resolve/main/checkpoint_RT_MPI_Small.pth) |
+| Medium (Default)| 278 MB | 69 Million | [Download](https://huggingface.co/3ZadeSSG/RT-MPINet/resolve/main/checkpoint_RT_MPI_Medium.pth) |
+| Large           | 1.2 GB | 288 Million| [Download](https://huggingface.co/3ZadeSSG/RT-MPINet/resolve/main/checkpoint_RT_MPI_Large.pth) |
+
 ## Usage
 
 ### 1. Live Rendering Demo
@@ -94,19 +108,6 @@ You can run the local demo of the Huggingface app to utilize your own GPU for fa
    ```bash
    python app.py
    ```
-
-
-## Checkpoints (Coming Soon)
-Pretrained model checkpoints should be placed in the `checkpoint/` directory. Example filenames:
-- `checkpoint_RT_MPI_Small.pth`
-- `checkpoint_RT_MPI_Medium.pth`
-- `checkpoint_RT_MPI_Large.pth`
-
-| Model           | Size   | Parameters | Checkpoint |
-|-----------------|--------|------------|----------------|
-| Small           | 26 MB  | 6.6 Million| [Download]() |
-| Medium (Default)| 278 MB | 69 Million | [Download]() |
-| Large           | 1.2 GB | 288 Million| [Download]() |
 
 
 ## Supported Resolutions
